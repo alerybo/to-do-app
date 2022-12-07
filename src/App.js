@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+//components
+import AddTask from "./components/AddTask";
+import TaskList from "./components/TaskList";
+import DisplayFilters from "./components/DisplayFilters";
+//styled components
+import GlobalStyles from "./components/styles/Global";
+import { Container } from "./components/styles/Container.styled";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Container>
+        <AddTask />
+        <DisplayFilters />
+        <TaskList />
+      </Container>
+    </>
   );
 }
 
