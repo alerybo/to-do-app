@@ -1,23 +1,24 @@
 import React from "react";
 //components
-import AddTask from "./components/AddTask";
-import TaskList from "./components/TaskList";
-import DisplayFilters from "./components/DisplayFilters";
+import AddTaskForm from "./add-task-form/AddTaskForm";
+import TaskList from "./task-list/TaskList";
+import Filters from "./filters/Filters";
 //styled components
-import GlobalStyles from "./components/styles/Global";
-import { Container } from "./components/styles/Container.styled";
+import { Main, GlobalStyles } from "./design-system";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Container>
-        <AddTask />
-        <DisplayFilters />
+      <Main>
+        <AddTaskForm />
+        <Filters />
         <TaskList />
-      </Container>
+      </Main>
     </>
   );
 }
 
 export default App;
+
+

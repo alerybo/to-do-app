@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
-    
-
+export const GlobalStyles = createGlobalStyle`
     *,
     ::after,
     ::before {
@@ -18,4 +16,3 @@ const GlobalStyles = createGlobalStyle`
         font-size: 0.875rem;
     }
 `;
-export default GlobalStyles;

@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context";
-import SingleTask from "./SingleTask";
+import Task from "../task/Task";
+import { Container, Button } from "../design-system";
 
 const TaskList = () => {
   const { tasks, filter } = useGlobalContext();
@@ -16,11 +17,14 @@ const TaskList = () => {
   });
 
   return (
-    <div>
+    <>
       {displayTasks.map((task) => (
-        <SingleTask key={task.id} {...task} />
+        <Task key={task.id} {...task} />
       ))}
-    </div>
+      <Container>
+        <Button>CLEAR ALL</Button>
+      </Container>
+    </>
   );
 };
 

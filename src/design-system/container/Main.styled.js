@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Main = styled.div`
   background: #fff;
   width: 90vw;
   max-width: 35rem;

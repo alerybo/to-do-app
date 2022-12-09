@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 //components
-import Alert from "./Alert";
+import Alert from "../alert/Alert";
 //styled components
-import { StyledForm } from "./styles/Form.styled";
+import { Form } from "../design-system";
+//constants
+import {
+  TIMEOUT_DELAY,
+  ALERT_MISSING_TITLE,
+  FORM_TITLE,
+  FORM_INPUT_PLACEHOLDER,
+  FORM_BUTTON_TEXT,
+} from "./constants";
 
 const AddTask = () => {
   const [alert, setAlert] = useState({ show: false, msg: "" });
@@ -13,7 +21,7 @@ const AddTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!taskTitle) {
-      setAlert({ show: true, msg: "please enter task title" });
+      setAlert({ show: true, msg: ALERT_MISSING_TITLE });
     } else {
       addTask(taskTitle);
       setTaskTitle("");
@@ -23,24 +31,24 @@ const AddTask = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setAlert(false);
-    }, 3000);
+    }, TIMEOUT_DELAY);
     return () => clearTimeout(timeout);
   }, [alert]);
 
   return (
-    <StyledForm onSubmit={handleSubmit}>
-      <h2>TO DO</h2>
+    <Form onSubmit={handleSubmit}>
+      <h2>{FORM_TITLE}</h2>
       {alert.show && <Alert {...alert} />}
       <div>
         <input
           type="text"
-          placeholder="e.g. groceries"
+          placeholder={FORM_INPUT_PLACEHOLDER}
           value={taskTitle}
           onChange={(e) => setTaskTitle(e.target.value)}
         />
-        <button type="submit">Add Task</button>
+        <button>{FORM_BUTTON_TEXT}</button>
       </div>
-    </StyledForm>
+    </Form>
   );
 };
 

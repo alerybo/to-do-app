@@ -1,7 +1,8 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 //styled components
-import { ButtonContainer } from "./styles/ButtonContainer.styled";
+import { Container } from "../design-system";
+import { Button } from "../design-system";
 
 const filters = ["ALL", "ACTIVE", "COMPLETED"];
 
@@ -13,13 +14,13 @@ const DisplayFilters = () => {
   };
 
   return (
-    <ButtonContainer>
+    <Container>
       {filters.map((filter) => (
-        <button key={filter} onClick={(e) => handleClick(e, filter)}>
+        <Button key={filter} onClick={(e) => handleClick(e, filter)}>
           {filter}
-        </button>
+        </Button>
       ))}
-    </ButtonContainer>
+    </Container>
   );
 };
 

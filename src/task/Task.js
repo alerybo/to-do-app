@@ -3,7 +3,7 @@ import { useGlobalContext } from "../context";
 import { MdClose } from "react-icons/md";
 import { FiEdit3 } from "react-icons/fi";
 //styled components
-import { Task } from "./styles/Task.styled";
+import { Task } from "./Task.styled";
 
 const SingleTask = ({ id, title, isCompleted }) => {
   const [isEditing, setIsEditing] = useState(false);
