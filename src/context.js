@@ -32,6 +32,10 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "FILTER_TASKS", payload: filter });
   };
 
+    const clearAllTasks = () => {
+      dispatch({ type: "CLEAR_ALL" });
+    };
+
   return (
     <AppContext.Provider
       value={{
@@ -41,6 +45,7 @@ const AppProvider = ({ children }) => {
         editTask,
         toggleTask,
         filterTasks,
+        clearAllTasks,
       }}
     >
       {children}

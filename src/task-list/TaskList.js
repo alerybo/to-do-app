@@ -4,7 +4,7 @@ import Task from "../task/Task";
 import { Container, Button } from "../design-system";
 
 const TaskList = () => {
-  const { tasks, filter } = useGlobalContext();
+  const { tasks, filter, clearAllTasks } = useGlobalContext();
 
   let displayTasks = tasks.filter((task) => {
     if (filter === "ACTIVE") {
@@ -16,13 +16,22 @@ const TaskList = () => {
     }
   });
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    clearAllTasks();
+  };
+
   return (
     <>
       {displayTasks.map((task) => (
         <Task key={task.id} {...task} />
       ))}
       <Container>
-        <Button>CLEAR ALL</Button>
+        {displayTasks.length === 0 ? (
+          <p>Create Your First Task!</p>
+        ) : (
+          <Button onClick={(e) => handleClick(e)}>CLEAR ALL</Button>
+        )}
       </Container>
     </>
   );

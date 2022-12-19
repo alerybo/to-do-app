@@ -32,6 +32,9 @@ const reducer = (state, action) => {
   if (action.type === "FILTER_TASKS") {
     return { ...state, filter: action.payload };
   }
+  if (action.type === "CLEAR_ALL") {
+    return { ...state, tasks: [] };
+  }
   return state;
 };
 
