@@ -16,6 +16,13 @@ const SingleTask = ({ id, title, isCompleted }) => {
     let newTitle = e.target.value;
     editTask(id, newTitle);
   };
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      setIsEditing(false);
+      let newTitle = e.target.value;
+      editTask(id, newTitle);
+    }
+  };
 
   return (
     <Task key={id}>
@@ -28,6 +35,7 @@ const SingleTask = ({ id, title, isCompleted }) => {
         type="text"
         disabled={isEditing ? "" : true}
         onBlur={(e) => handleEdit(e)}
+        onKeyDown={(e) => handleKeyDown(e)}
         value={taskTitle}
         onChange={(e) => setTaskTitle(e.target.value)}
       />
