@@ -15,6 +15,7 @@ const TaskList = () => {
       return task;
     }
   });
+  console.log(displayTasks);
 
   const handleClick = (e) => {
     e.preventDefault();
