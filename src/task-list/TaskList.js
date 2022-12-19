@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 import Task from "../task/Task";
 import { Container, Button } from "../design-system";
 
 const TaskList = () => {
   const { tasks, filter, clearAllTasks } = useGlobalContext();
+  const [message, setMessage] = useState("Create your first task!");
 
   let displayTasks = tasks.filter((task) => {
     if (filter === "ACTIVE") {
@@ -15,12 +16,21 @@ const TaskList = () => {
       return task;
     }
   });
-  console.log(displayTasks);
 
   const handleClick = (e) => {
     e.preventDefault();
     clearAllTasks();
   };
+
+  useEffect(() => {
+    if (filter === "ACTIVE") {
+      setMessage("No active tasks");
+    } else if (filter === "COMPLETED") {
+      setMessage("No completed tasks");
+    } else {
+      setMessage("Create your first task!");
+    }
+  }, [filter]);
 
   return (
     <>
@@ -29,7 +39,7 @@ const TaskList = () => {
       ))}
       <Container>
         {displayTasks.length === 0 ? (
-          <p>Create Your First Task!</p>
+          <p>{message}</p>
         ) : (
           <Button onClick={(e) => handleClick(e)}>CLEAR ALL</Button>
         )}
