@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 import Task from "../task/Task";
+//styled components
 import { Container, Button } from "../design-system";
+//constants
+import {
+  MESSAGE_DEFAULT,
+  MESSAGE_ACTIVE,
+  MESSAGE_COMPLETED,
+} from "./constants";
 
 const TaskList = () => {
   const { tasks, filter, clearAllTasks } = useGlobalContext();
-  const [message, setMessage] = useState("Create your first task!");
+  const [message, setMessage] = useState(MESSAGE_DEFAULT);
 
   let displayTasks = tasks.filter((task) => {
     if (filter === "ACTIVE") {
@@ -24,11 +31,11 @@ const TaskList = () => {
 
   useEffect(() => {
     if (filter === "ACTIVE") {
-      setMessage("No active tasks");
+      setMessage(MESSAGE_ACTIVE);
     } else if (filter === "COMPLETED") {
-      setMessage("No completed tasks");
+      setMessage(MESSAGE_COMPLETED);
     } else {
-      setMessage("Create your first task!");
+      setMessage(MESSAGE_DEFAULT);
     }
   }, [filter]);
 
