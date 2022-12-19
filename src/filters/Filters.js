@@ -3,8 +3,8 @@ import { useGlobalContext } from "../context";
 //styled components
 import { Container } from "../design-system";
 import { Button } from "../design-system";
-
-const filters = ["ALL", "ACTIVE", "COMPLETED"];
+//constants
+import { FILTERS } from "./constants";
 
 const DisplayFilters = () => {
   const { filterTasks } = useGlobalContext();
@@ -18,7 +18,7 @@ const DisplayFilters = () => {
 
   return (
     <Container>
-      {filters.map((filter) => (
+      {FILTERS.map((filter) => (
         <Button
           className={active === filter ? "active" : ""}
           key={filter}
