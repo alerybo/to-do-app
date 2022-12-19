@@ -20,8 +20,15 @@ export const Form = styled.form`
     background: #f1f2ed;
     border-radius: 0.25rem 0 0 0.25rem;
     border: none;
-    flex: 1 0 auto;
     color: gray;
+  }
+
+  #add-task-title {
+    flex: 2;
+  }
+  #add-task-category {
+    min-width: 0;
+    flex: 1;
   }
 
   button {

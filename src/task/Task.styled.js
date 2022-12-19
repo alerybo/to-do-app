@@ -18,6 +18,20 @@ export const Task = styled.div`
     border: none;
     padding: 0.25rem;
   }
+  #task-title {
+    flex: 4;
+  }
+  #task-category {
+    min-width: 0;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    background: #f1f2ed;
+    border-radius: 0.25rem;
+    transition: all 0.3s;
+    font-size: 0.7rem;
+    color: #5c5c5c;
+  }
   button {
     margin: 0.5rem;
     background: transparent;

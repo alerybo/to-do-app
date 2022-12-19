@@ -5,23 +5,27 @@ import { FiEdit3 } from "react-icons/fi";
 //styled components
 import { Task } from "./Task.styled";
 
-const SingleTask = ({ id, title, isCompleted }) => {
+const SingleTask = ({ id, title, category, isCompleted }) => {
+  const { deleteTask, toggleTask, editTask, categories, updateCategories } =
+    useGlobalContext();
   const [isEditing, setIsEditing] = useState(false);
   const [taskTitle, setTaskTitle] = useState(title);
-
-  const { deleteTask, toggleTask, editTask } = useGlobalContext();
+  const [taskCategory, setTaskCategory] = useState(category);
 
   const handleEdit = (e) => {
     setIsEditing(false);
-    let newTitle = e.target.value;
-    editTask(id, newTitle);
-  };
-  const handleKeyDown = (e) => {
-    if (e.key === "Enter") {
-      setIsEditing(false);
-      let newTitle = e.target.value;
-      editTask(id, newTitle);
+    let newTitle = taskTitle;
+    let newCategory = taskCategory;
+
+    if (e.target.id === "task-title") {
+      newTitle = e.target.value;
     }
+    if (e.target.id === "task-category") {
+      newCategory = e.target.value;
+    }
+    
+    updateCategories(newCategory);
+    editTask(id, newTitle, newCategory);
   };
 
   return (
@@ -32,13 +36,31 @@ const SingleTask = ({ id, title, isCompleted }) => {
         onChange={() => toggleTask(id)}
       />
       <input
+        id="task-title"
         type="text"
         disabled={isEditing ? "" : true}
         onBlur={(e) => handleEdit(e)}
-        onKeyDown={(e) => handleKeyDown(e)}
+        onKeyDown={(e) => (e.key === "Enter" ? handleEdit(e) : () => {})}
         value={taskTitle}
         onChange={(e) => setTaskTitle(e.target.value)}
       />
+
+      <input
+        type="text"
+        id="task-category"
+        list="task-categories"
+        disabled={isEditing ? "" : true}
+        placeholder={taskCategory.toUpperCase()}
+        onChange={(e) => setTaskCategory(e.target.value)}
+        onKeyDown={(e) => (e.key === "Enter" ? handleEdit(e) : () => {})}
+        onBlur={(e) => handleEdit(e)}
+      />
+      <datalist id="task-categories">
+        {categories.map((category) => (
+          <option key={category} value={category} />
+        ))}
+      </datalist>
+
       <button onClick={() => setIsEditing(true)}>
         <FiEdit3 />
       </button>

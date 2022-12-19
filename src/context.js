@@ -7,21 +7,22 @@ const AppContext = React.createContext();
 const INITIAL_STATE = {
   tasks,
   filter: "ALL",
+  categories: ["HOME", "SCHOOL", "MOVIES", "OTHER"],
 };
 
 const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
-  const addTask = (taskTitle) => {
-    dispatch({ type: "ADD_TASK", payload: taskTitle });
+  const addTask = (taskTitle, taskCategory) => {
+    dispatch({ type: "ADD_TASK", payload: { taskTitle, taskCategory } });
   };
 
   const deleteTask = (id) => {
     dispatch({ type: "DELETE_TASK", payload: id });
   };
 
-  const editTask = (id, newTitle) => {
-    dispatch({ type: "EDIT_TASK", payload: { id, newTitle } });
+  const editTask = (id, newTitle, newCategory) => {
+    dispatch({ type: "EDIT_TASK", payload: { id, newTitle, newCategory } });
   };
 
   const toggleTask = (id) => {
@@ -32,9 +33,12 @@ const AppProvider = ({ children }) => {
     dispatch({ type: "FILTER_TASKS", payload: filter });
   };
 
-    const clearAllTasks = () => {
-      dispatch({ type: "CLEAR_ALL" });
-    };
+  const clearAllTasks = () => {
+    dispatch({ type: "CLEAR_ALL" });
+  };
+  const updateCategories = (taskCategory) => {
+    dispatch({ type: "UPDATE_CATEGORIES", payload: taskCategory });
+  };
 
   return (
     <AppContext.Provider
@@ -46,6 +50,7 @@ const AppProvider = ({ children }) => {
         toggleTask,
         filterTasks,
         clearAllTasks,
+        updateCategories,
       }}
     >
       {children}
