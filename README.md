@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### Running FE + BE
+
+In Terminal1 - `npm start` to run FE  
+In Terminal2 - `cd api && npm dev` to run BE
+
 In the project directory, you can run:
 
 ### `npm start`
