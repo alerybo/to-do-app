@@ -1,7 +1,7 @@
 import React, { useContext, useReducer } from "react";
 import reducer from "./reducer";
 
-import tasks from "./data";
+import tasks from "./data/data";
 
 const AppContext = React.createContext();
 const INITIAL_STATE = {

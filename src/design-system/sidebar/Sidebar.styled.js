@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const SidebarContainer = styled.div`
-  height: 100%;
+  height: 100vh;
   width: 300px;
   background-color: ${(props) => props.theme.colors.backgroundSecondary};
-  position: fixed;
-  padding: 50px 20px;
+  padding: 50px 20px 20px 20px;
 
   display: flex;
   flex-direction: column;
@@ -14,7 +13,7 @@ export const SidebarContainer = styled.div`
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 85px;
+    gap: 40px;
   }
 
   .user {

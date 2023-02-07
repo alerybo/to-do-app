@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
+// Material UI components
 import Autocomplete from "@mui/material/Autocomplete";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import Collapse from "@mui/material/Collapse";
-
+// Styled Components
 import { SidebarContainer, SearchBar, BorderButton } from "../../design-system";
+// Icons
 import {
   BsCalendar4Event,
   BsBookmarks,
@@ -14,7 +18,6 @@ import {
   BsChevronUp,
   BsPlusLg,
 } from "react-icons/bs";
-import { useState } from "react";
 
 const Sidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -56,8 +59,10 @@ const Sidebar = () => {
               aria-labelledby="nested-list-subheader"
             >
               <ListItemButton>
-                <BsCalendar4Event />
-                <p>Today</p>
+                <Link to="/">
+                  <BsCalendar4Event />
+                  <p>Today</p>
+                </Link>
               </ListItemButton>
 
               <ListItemButton onClick={handleClick}>
@@ -69,7 +74,9 @@ const Sidebar = () => {
               <Collapse in={isDropdownOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   <ListItemButton>
-                    <p>Work</p>
+                    <Link to="/collection/work">
+                      <p>Work</p>
+                    </Link>
                   </ListItemButton>
                   <ListItemButton>
                     <p>Study</p>

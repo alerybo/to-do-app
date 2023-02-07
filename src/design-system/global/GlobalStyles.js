@@ -22,4 +22,12 @@ export const GlobalStyles = createGlobalStyle`
         font-size: ${(props) => props.theme.fontSizes.title};
         font-weight:100;
     }
+    a{
+        color: ${(props) => props.theme.colors.textPrimary};
+        text-decoration:none;
+        display: flex;
+        align-items:center;
+        font-family: 'Source Sans Pro', sans-serif;
+
+    }
 `;

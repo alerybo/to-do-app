@@ -1,9 +1,13 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Theme from "./design-system/Theme";
 import { AppLayout } from "./design-system";
 import { GlobalStyles } from "./design-system";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Dashboard from "./components/Dashboard/Dashboard";
+import { StyledDashboard } from "./design-system";
+import Archive from "./pages/Archive";
+import StarredList from "./pages/StarredList";
+import DailyList from "./pages/DailyList";
 
 function App() {
   return (
@@ -12,7 +16,13 @@ function App() {
         <GlobalStyles />
         <AppLayout>
           <Sidebar />
-          <Dashboard />
+          <StyledDashboard>
+            <Routes>
+              <Route path="/" element={<DailyList />} />
+              <Route path="/starred" element={<StarredList />} />
+              <Route path="/archive" element={<Archive />} />
+            </Routes>
+          </StyledDashboard>
         </AppLayout>
       </Theme>
     </>
