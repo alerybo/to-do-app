@@ -1,24 +1,22 @@
 import React from "react";
-//components
-import AddTaskForm from "./add-task-form/AddTaskForm";
-import TaskList from "./task-list/TaskList";
-import Filters from "./filters/Filters";
-//styled components
-import { Main, GlobalStyles } from "./design-system";
+import Theme from "./design-system/Theme";
+import { AppLayout } from "./design-system";
+import { GlobalStyles } from "./design-system";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Main>
-        <AddTaskForm />
-        <Filters />
-        <TaskList />
-      </Main>
+      <Theme>
+        <GlobalStyles />
+        <AppLayout>
+          <Sidebar />
+          <Dashboard />
+        </AppLayout>
+      </Theme>
     </>
   );
 }
 
 export default App;
-
-

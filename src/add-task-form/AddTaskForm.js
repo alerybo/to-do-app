@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useGlobalContext } from "../context";
-//components
-import Alert from "../alert/Alert";
+
 //styled components
 import { Form } from "../design-system";
 //constants
 import {
-  TIMEOUT_DELAY,
-  ALERT_MISSING_TITLE,
   FORM_TITLE,
   FORM_TITLE_PLACEHOLDER,
   FORM_CATEGORY_PLACEHOLDER,
@@ -15,7 +12,6 @@ import {
 } from "./constants";
 
 const AddTask = () => {
-  const [alert, setAlert] = useState({ show: false, msg: "" });
   const [taskTitle, setTaskTitle] = useState("");
   const [taskCategory, setTaskCategory] = useState("");
   const { addTask, categories, updateCategories } = useGlobalContext();
@@ -23,7 +19,7 @@ const AddTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!taskTitle) {
-      setAlert({ show: true, msg: ALERT_MISSING_TITLE });
+      console.log("error");
     } else {
       updateCategories(taskCategory);
       addTask(taskTitle, taskCategory);
@@ -32,17 +28,9 @@ const AddTask = () => {
     }
   };
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAlert(false);
-    }, TIMEOUT_DELAY);
-    return () => clearTimeout(timeout);
-  }, [alert]);
-
   return (
     <Form onSubmit={handleSubmit}>
       <h2>{FORM_TITLE}</h2>
-      {alert.show && <Alert {...alert} />}
       <div>
         <input
           id="add-task-title"

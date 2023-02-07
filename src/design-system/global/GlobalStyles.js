@@ -10,9 +10,16 @@ export const GlobalStyles = createGlobalStyle`
     }   
 
     body {
-        font-family: 'Roboto', sans-serif;
-        background: #c2d1b2;
-        line-height: 1.5;
-        font-size: 0.875rem;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: ${(props) => props.theme.colors.textPrimary};
+    }
+
+    p {
+        font-size: ${(props) => props.theme.fontSizes.base};
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    h2 {
+        font-size: ${(props) => props.theme.fontSizes.title};
+        font-weight:100;
     }
 `;
