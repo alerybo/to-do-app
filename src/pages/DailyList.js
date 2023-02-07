@@ -1,12 +1,18 @@
-import { DashboardHeader, Container, TextButton } from "../design-system";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import TaskList from "../components/TaskList";
+import {
+  DashboardHeader,
+  Container,
+  TextButton,
+  GridContainer,
+} from "../design-system";
 
 const DailyList = () => {
   return (
     <div>
       <DashboardHeader>
         <h2>Daily tasks</h2>
-        <Container className="filters-container">
+        <Container>
           <div>
             <TextButton>
               <p>Day</p>
@@ -29,7 +35,14 @@ const DailyList = () => {
           </Container>
         </Container>
       </DashboardHeader>
-      <div>List</div>
+      <GridContainer>
+        <TaskList />
+        <TaskList />
+        <TaskList />
+        <TaskList />
+        <TaskList />
+        <TaskList />
+      </GridContainer>
     </div>
   );
 };
