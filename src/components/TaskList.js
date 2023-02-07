@@ -1,19 +1,24 @@
 import { StyledCard, Container, TextButton } from "../design-system";
-import { BsThreeDots } from "react-icons/bs";
+import { BsThreeDots, BsPlusLg } from "react-icons/bs";
+import InputBase from "@mui/material/InputBase";
 import Task from "./Task";
 
-const TaskList = () => {
+const TaskList = ({ list }) => {
   return (
     <StyledCard>
       <Container>
-        <p>Title</p>
+        <InputBase placeholder={list[0].list_name} />
         <TextButton>
           <BsThreeDots />
         </TextButton>
       </Container>
-      <Task />
-      <Task />
-      <Task />
+      {list.map((task) => (
+        <Task key={task.task_id} {...task} />
+      ))}
+      <TextButton className="add-button">
+        <BsPlusLg />
+        <p>Add task</p>
+      </TextButton>
     </StyledCard>
   );
 };

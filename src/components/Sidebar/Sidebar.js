@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useGlobalContext } from "../../context";
 // Material UI components
 import Autocomplete from "@mui/material/Autocomplete";
 import List from "@mui/material/List";
@@ -24,6 +25,7 @@ const Sidebar = () => {
   const handleClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const { collections } = useGlobalContext();
 
   return (
     <SidebarContainer>
@@ -73,24 +75,19 @@ const Sidebar = () => {
 
               <Collapse in={isDropdownOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  <ListItemButton>
-                    <Link to="/collection/work">
-                      <p>Work</p>
-                    </Link>
-                  </ListItemButton>
-                  <ListItemButton>
-                    <p>Study</p>
-                  </ListItemButton>
-                  <ListItemButton>
-                    <p>Personal</p>
-                  </ListItemButton>
+                  {collections.map((collection) => (
+                    <ListItemButton>
+                      <Link to={`collection/` + collection}>
+                        <p>{collection}</p>
+                      </Link>
+                    </ListItemButton>
+                  ))}
                   <ListItemButton>
                     <BsPlusLg className="plus-icon" />
                     <p>New collection</p>
                   </ListItemButton>
                 </List>
               </Collapse>
-
               <ListItemButton>
                 <BsStar />
                 <p>Starred</p>

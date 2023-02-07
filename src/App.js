@@ -8,6 +8,7 @@ import { StyledDashboard } from "./design-system";
 import Archive from "./pages/Archive";
 import StarredList from "./pages/StarredList";
 import DailyList from "./pages/DailyList";
+import Collection from "./pages/Collection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<DailyList />} />
               <Route path="/starred" element={<StarredList />} />
               <Route path="/archive" element={<Archive />} />
+              <Route path="/collection:id" element={<Collection />} />
             </Routes>
           </StyledDashboard>
         </AppLayout>

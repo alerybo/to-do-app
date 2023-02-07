@@ -9,7 +9,8 @@ export { StyledDashboard } from "./global/Dashboard.styled";
 export { DashboardHeader } from "./header/DashboardHeader.styled";
 
 //inputs
-export { SearchBar } from "./search/SearchBar.styled";
+export { SearchBar } from "./input/SearchBar.styled";
+export { StyledForm } from "./input/StyledForm.styled";
 
 //Buttons
 export { BorderButton } from "./button/BorderButton.styled";

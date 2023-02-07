@@ -8,7 +8,7 @@ import {
   GridContainer,
 } from "../design-system";
 
-const DailyList = () => {
+const Collection = () => {
   const { data } = useGlobalContext();
   const personal = data.filter((task) => task.collection === "personal");
 
@@ -26,7 +26,7 @@ const DailyList = () => {
   return (
     <div>
       <DashboardHeader>
-        <h2>Daily tasks</h2>
+        <h2>Collection</h2>
         <Container>
           <div>
             <TextButton>
@@ -59,4 +59,4 @@ const DailyList = () => {
   );
 };
 
-export default DailyList;
+export default Collection;

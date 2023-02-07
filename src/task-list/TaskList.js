@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
 import Task from "../task/Task";
 //styled components
