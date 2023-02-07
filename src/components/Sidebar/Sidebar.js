@@ -25,7 +25,7 @@ const Sidebar = () => {
   const handleClick = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-  const { collections } = useGlobalContext();
+  const { state } = useGlobalContext();
 
   return (
     <SidebarContainer>
@@ -75,7 +75,7 @@ const Sidebar = () => {
 
               <Collapse in={isDropdownOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
-                  {collections.map((collection) => (
+                  {state.collections.map((collection) => (
                     <ListItemButton>
                       <Link to={`collection/` + collection}>
                         <p>{collection}</p>

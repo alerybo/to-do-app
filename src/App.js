@@ -22,7 +22,7 @@ function App() {
               <Route path="/" element={<DailyList />} />
               <Route path="/starred" element={<StarredList />} />
               <Route path="/archive" element={<Archive />} />
-              <Route path="/collection:id" element={<Collection />} />
+              <Route path="/collection/:id" element={<Collection />} />
             </Routes>
           </StyledDashboard>
         </AppLayout>

@@ -9,8 +9,8 @@ import {
 } from "../design-system";
 
 const DailyList = () => {
-  const { data } = useGlobalContext();
-  const personal = data.filter((task) => task.collection === "personal");
+  const { state } = useGlobalContext();
+  const personal = state.tasks.filter((task) => task.collection === "personal");
 
   const tasksByList = personal.reduce((acc, curr) => {
     if (!acc[curr.list_id]) {
@@ -28,7 +28,7 @@ const DailyList = () => {
       <DashboardHeader>
         <h2>Daily tasks</h2>
         <Container>
-          <div>
+          <Container>
             <TextButton>
               <p>Day</p>
             </TextButton>
@@ -38,7 +38,7 @@ const DailyList = () => {
             <TextButton>
               <p>Month</p>
             </TextButton>
-          </div>
+          </Container>
           <Container>
             <TextButton>
               <BsChevronLeft />

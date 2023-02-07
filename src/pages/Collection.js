@@ -1,5 +1,6 @@
+import { useParams } from "react-router-dom";
 import { useGlobalContext } from "../context";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { BsPlusLg } from "react-icons/bs";
 import TaskList from "../components/TaskList";
 import {
   DashboardHeader,
@@ -9,49 +10,23 @@ import {
 } from "../design-system";
 
 const Collection = () => {
-  const { data } = useGlobalContext();
-  const personal = data.filter((task) => task.collection === "personal");
+  const { state, filterTasks, sortTasksByLists } = useGlobalContext();
+  const { id } = useParams();
+  const tasks = sortTasksByLists(filterTasks(state.tasks, id));
 
-  const tasksByList = personal.reduce((acc, curr) => {
-    if (!acc[curr.list_id]) {
-      acc[curr.list_id] = [];
-    }
-    acc[curr.list_id].push(curr);
-    return acc;
-  }, {});
-  let taskLists = [];
-  for (const list in tasksByList) {
-    taskLists.push(tasksByList[list]);
-  }
   return (
     <div>
       <DashboardHeader>
-        <h2>Collection</h2>
+        <h2>{id}</h2>
         <Container>
-          <div>
-            <TextButton>
-              <p>Day</p>
-            </TextButton>
-            <TextButton>
-              <p>Week</p>
-            </TextButton>
-            <TextButton>
-              <p>Month</p>
-            </TextButton>
-          </div>
-          <Container>
-            <TextButton>
-              <BsChevronLeft />
-            </TextButton>
-            <p>6 feb - 12 feb</p>
-            <TextButton>
-              <BsChevronRight />
-            </TextButton>
-          </Container>
+          <TextButton>
+            <BsPlusLg />
+            <p>New list</p>
+          </TextButton>
         </Container>
       </DashboardHeader>
       <GridContainer>
-        {taskLists.map((list) => (
+        {tasks.map((list) => (
           <TaskList key={list[0].list_id} list={list} />
         ))}
       </GridContainer>
