@@ -9,23 +9,23 @@ const reducer = (state, action) => {
   //     let newList = [...state.tasks, newTask];
   //     return { ...state, tasks: newList };
   //   }
-  //   if (action.type === "DELETE_TASK") {
-  //     let newList = state.tasks.filter((task) => task.id !== action.payload);
-  //     console.log(newList);
-  //     return { ...state, tasks: newList };
-  //   }
-  //   if (action.type === "EDIT_TASK") {
-  //     let newList = state.tasks.map((task) =>
-  //       task.id === action.payload.id
-  //         ? {
-  //             ...task,
-  //             title: action.payload.newTitle,
-  //             category: action.payload.newCategory,
-  //           }
-  //         : task
-  //     );
-  //     return { ...state, tasks: newList };
-  //   }
+
+  // TASK ACTIONS
+  if (action.type === "DELETE_TASK") {
+    let newList = state.tasks.filter((task) => task.task_id !== action.payload);
+    return { ...state, tasks: newList };
+  }
+  if (action.type === "EDIT_TASK") {
+    let newList = state.tasks.map((task) =>
+      task.task_id === action.payload.task_id
+        ? {
+            ...task,
+            task_name: action.payload.newTitle,
+          }
+        : task
+    );
+    return { ...state, tasks: newList };
+  }
   if (action.type === "TOGGLE_TASK") {
     let newList = state.tasks.map((task) =>
       task.task_id === action.payload
@@ -34,6 +34,17 @@ const reducer = (state, action) => {
     );
     return { ...state, tasks: newList };
   }
+
+  // LIST ACTIONS
+  if (action.type === "EDIT_LIST_TITLE") {
+    let newList = state.tasks.map((task) =>
+      task.list_id === action.payload.list_id
+        ? { ...task, list_name: action.payload.newTitle }
+        : task
+    );
+    return { ...state, tasks: newList };
+  }
+
   //   if (action.type === "FILTER_TASKS") {
   //     return { ...state, filter: action.payload };
   //   }

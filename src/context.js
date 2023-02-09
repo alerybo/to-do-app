@@ -26,6 +26,7 @@ const AppProvider = ({ children }) => {
       acc[curr.list_id].push(curr);
       return acc;
     }, {});
+
     let taskLists = [];
     for (const list in tasksByList) {
       taskLists.push(tasksByList[list]);
@@ -33,14 +34,37 @@ const AppProvider = ({ children }) => {
     return taskLists;
   };
 
+  // TASK DISPATCHERS
   const toggleTask = (task_id) => {
     console.log(task_id);
     dispatch({ type: "TOGGLE_TASK", payload: task_id });
   };
+  const deleteTask = (task_id) => {
+    console.log(task_id);
+    dispatch({ type: "DELETE_TASK", payload: task_id });
+  };
+  const editTask = (task_id, newTitle) => {
+    console.log(task_id);
+    dispatch({ type: "EDIT_TASK", payload: { task_id, newTitle } });
+  };
+
+  // LIST DISPATCHERS
+  const editListTitle = (list_id, newTitle) => {
+    console.log(list_id);
+    dispatch({ type: "EDIT_LIST_TITLE", payload: { list_id, newTitle } });
+  };
 
   return (
     <AppContext.Provider
-      value={{ state, filterTasks, sortTasksByLists, toggleTask }}
+      value={{
+        state,
+        filterTasks,
+        sortTasksByLists,
+        toggleTask,
+        editTask,
+        deleteTask,
+        editListTitle,
+      }}
     >
       {children}
     </AppContext.Provider>
