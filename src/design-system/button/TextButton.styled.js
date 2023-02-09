@@ -17,7 +17,7 @@ export const TextButton = styled.button`
 
   &:hover,
   &.active {
-    background: ${(props) => props.theme.colors.backgroundSecondary};
+    background: rgba(0, 0, 0, 0.05);
   }
 
   svg {

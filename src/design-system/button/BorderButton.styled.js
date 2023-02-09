@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const BorderButton = styled.button`
-
   width: fit-content;
   display: block;
   background: transparent;
@@ -14,6 +13,6 @@ export const BorderButton = styled.button`
 
   &:hover,
   &.active {
-    background: ${(props) => props.theme.colors.backgroundPrimary};
+    background: rgba(0, 0, 0, 0.05);
   }
 `;

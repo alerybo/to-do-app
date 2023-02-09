@@ -6,6 +6,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "b498c0e3-a96b-4a88-814f-22429e447377",
@@ -14,6 +15,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "0b07b4dc-7014-45f9-90c5-3a21cdf6e6f7",
@@ -22,6 +24,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "0a3aa7d2-6f9b-442c-b690-0098c22c5d19",
@@ -30,6 +33,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "bd5894fc-adac-449b-9368-117782797817",
@@ -38,6 +42,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "7d272283-a4a8-451f-b2fb-c56478b3bd1c",
@@ -46,6 +51,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "ae967dff-2f69-4209-a041-09942b7af744",
@@ -54,6 +60,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "e87b51fd-d8eb-4ff1-860f-fffbfe4fb9c5",
@@ -62,6 +69,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "9c08ecf7-b0c8-4b17-9190-e1acb6d0f65e",
@@ -70,6 +78,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "57e60743-83ce-40b9-b38d-dba9201f18c2",
@@ -78,6 +87,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "07b619c3-f6ab-4026-bde9-143a3aa65384",
@@ -86,6 +96,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "1399061f-bf7a-476f-b46d-2759e1d8944b",
@@ -94,6 +105,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "4064d4a9-b765-4a4a-94e6-0d10e74fcf1e",
@@ -102,6 +114,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "df8be7a8-57f8-4224-b779-ce3d39a28fc4",
@@ -110,6 +123,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "9e5103ea-6c09-47ea-8686-95eeba0c464c",
@@ -118,6 +132,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "878135c5-7923-4c78-8ee2-267e28c0c184",
@@ -126,6 +141,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "973a8bee-43c0-4bde-90d3-e12ebaee9037",
@@ -134,6 +150,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "d7550421-6fff-41af-8bc6-d9f4d8500837",
@@ -142,6 +159,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "ee42580a-af1c-424a-a46f-ec4a30a831ae",
@@ -150,6 +168,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "c1e815ef-795a-48f3-90c7-5b9b9e91d248",
@@ -158,6 +177,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "9d2b0fe7-33ee-4da1-8dbf-9b4ff978b6d8",
@@ -166,6 +186,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "2354c035-b45c-44ef-a73c-17f580b17bfe",
@@ -174,6 +195,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "5299fab6-336b-4d21-aec0-0fda2793875d",
@@ -182,6 +204,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "8a69d66c-1c49-43cf-9eb5-cc4dd7749881",
@@ -190,6 +213,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "74c3aa6e-15b0-4e4b-b12a-74527f41ac33",
@@ -198,6 +222,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "fddd1c15-a66e-4217-86f7-d1fbad624e7d",
@@ -206,6 +231,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "a155fb76-af81-46e0-86de-7cbbfdb5cd99",
@@ -214,6 +240,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "1311300d-4ecf-45a2-acac-1c962342d850",
@@ -222,6 +249,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "2ab4a7a9-c095-417d-aa60-08ccd7ea9ecc",
@@ -230,6 +258,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "d4f88c1c-aeab-4301-b67d-07fe8771cf98",
@@ -238,6 +267,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "ba206e84-5560-49a9-9586-12258c2b4d6e",
@@ -246,6 +276,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "a3bbf5fd-7168-4a9a-a9be-78e86aa787fc",
@@ -254,6 +285,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "43148c4a-6ecb-4cf3-8ad8-1ad3609e4ee0",
@@ -262,6 +294,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "bf317857-054f-44c2-81f4-1859461a8d27",
@@ -270,6 +303,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "a2bd75d1-2f92-4639-848f-4f81a47b1750",
@@ -278,6 +312,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "77a6dc0d-8837-4bbe-8733-7f572dd7a5e2",
@@ -286,6 +321,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "9436bed7-a642-4b2f-9653-4dcbe16fb583",
@@ -294,6 +330,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "3a16bfa7-33df-473c-a84e-4fb1a9c5405f",
@@ -302,6 +339,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "6efeb929-aac4-4ea5-9270-eee0ff844d70",
@@ -310,6 +348,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "849a7603-dc7f-49a6-9cdf-b7e3f23b1855",
@@ -318,6 +357,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "3654f7a6-ebae-49db-a3ac-65dc0fc8fac5",
@@ -326,6 +366,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "6dc38990-2302-478b-ba0d-ef232febc7a1",
@@ -334,6 +375,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "82b3bb21-0399-4b4f-b93b-88cab06b1b9c",
@@ -342,6 +384,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "2ebcad96-487f-4f50-9f7e-9b2505a96381",
@@ -350,6 +393,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "d64c1283-0ddf-4440-ba08-b551966964c1",
@@ -358,6 +402,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "2feb7c6a-80d7-4147-927d-50224f34da9c",
@@ -366,6 +411,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "c8564831-5f4a-4744-971e-b9fc308c3f66",
@@ -374,6 +420,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "bc5fe015-0b60-4f2f-9166-c26bded5d9fb",
@@ -382,6 +429,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "74e5f00b-0e35-4c56-8bf8-68fc1c825974",
@@ -390,6 +438,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "54c52981-d5eb-4242-8dee-021087de9681",
@@ -398,6 +447,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "2cc6cf5b-f040-4d0d-b017-44a5b1adc6f5",
@@ -406,6 +456,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "a175d2b6-07f9-4de8-8a6a-e732b2582c6a",
@@ -414,6 +465,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "01187eda-221c-4126-9d39-31b8d6f53330",
@@ -422,6 +474,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "a9845c72-b974-4c50-b418-25e34ee49276",
@@ -430,6 +483,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "ced0201b-264f-4f8a-b9ea-91e4ecb76ac3",
@@ -438,6 +492,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "4a20fed1-c186-4735-a5b7-d5727d357ddc",
@@ -446,6 +501,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "c917d15a-b232-4959-813f-63a5724c5aad",
@@ -454,6 +510,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "b0f2b90c-4239-4acd-83fd-12b88a95bbc9",
@@ -462,6 +519,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "5b88e577-4b59-4800-b473-217302f9afd4",
@@ -470,6 +528,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "1d2475ed-9ca5-4667-98f9-d677edc9c83f",
@@ -478,6 +537,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "15a53501-bf9e-4a60-b21f-99af090e4457",
@@ -486,6 +546,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "e912b6fb-7fbf-4a8d-b16e-5e613a138945",
@@ -494,6 +555,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "87607dd3-8b30-4110-9c34-7e21696e7fe1",
@@ -502,6 +564,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "85d963f5-1591-4e82-863f-a0c536c0cf7c",
@@ -510,6 +573,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "c7faff72-28f4-459d-9dde-027039e7fb0c",
@@ -518,6 +582,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "71327eca-40fe-4ffe-9488-1699a0097cd0",
@@ -526,6 +591,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "323a1857-fe62-4945-bd0b-0d7a6a69a3b4",
@@ -534,6 +600,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "de63f67b-5dbf-4f6a-96f1-95e71f36f3fb",
@@ -542,6 +609,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "7edc698c-49c1-40ce-b8df-631fee8dc5b8",
@@ -550,6 +618,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "7a943810-f951-462d-bfff-2a7eeffd2179",
@@ -558,6 +627,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "81099687-27a6-41b7-aa3d-1511e24d5ac1",
@@ -566,6 +636,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "cd3223f0-5e6f-44d9-94a4-8a98fba95ddc",
@@ -574,6 +645,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "51b09d93-b8e3-45d8-ab61-68bc51758bc4",
@@ -582,6 +654,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "af4bdc79-5a0d-4d1d-9547-cd0f1efc312b",
@@ -590,6 +663,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "a9836205-6bfd-4828-a1a9-304351ce9835",
@@ -598,6 +672,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "245c4229-7e9a-4d4c-b50c-fe726731e7e3",
@@ -606,6 +681,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "fa39657c-fc12-4a99-b7a7-3aa949a2ab24",
@@ -614,6 +690,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "1129cd78-bc94-4a68-ace3-4f9d24605ea4",
@@ -622,6 +699,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "05c29af8-e39f-4a7b-be3f-2ebd587cf639",
@@ -630,6 +708,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "64ce2804-c460-4926-9eed-f05394ffea49",
@@ -638,6 +717,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "f4a834c3-5836-4a2d-800f-8933e4470216",
@@ -646,6 +726,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "240a121d-289f-4a71-badb-b6c66fd15c58",
@@ -654,6 +735,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "0ab02b35-b1f6-4a8f-8ebb-65d3f10e428f",
@@ -662,6 +744,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "161c83a1-266e-4d4f-ac43-6fdd1b1c7730",
@@ -670,6 +753,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "ebbc3048-91f9-4cb7-b88c-ad944f3a9315",
@@ -678,6 +762,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "a1608d1e-d444-4afc-bd40-0dcdd1861979",
@@ -686,6 +771,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "c1e5d319-8d24-4068-8950-74d4e3651fe6",
@@ -694,6 +780,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "b4407c3e-27f3-4c72-9361-88d91b31c6d8",
@@ -702,6 +789,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "8867cd91-b777-4c1d-9131-16584ceb557c",
@@ -710,6 +798,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "93b8b9ef-3586-4eb0-8ae2-24afb665952e",
@@ -718,6 +807,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "fd693afe-d8ae-4aba-bb4f-8e8ad7f37daa",
@@ -726,6 +816,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "41063bbe-33e6-4145-8116-7a3046768a58",
@@ -734,6 +825,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "ac53eb87-6410-4e58-941e-a3500acf5d0a",
@@ -742,6 +834,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "733b072b-6b19-4b19-98cb-a92883c3db11",
@@ -750,6 +843,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "58559188-ae57-4f23-8e47-3b42bb056235",
@@ -758,6 +852,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "f23b80b4-09b8-4c3c-8f72-2dd538025c49",
@@ -766,6 +861,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "70e00f69-b728-4e35-8777-c27feb0039a8",
@@ -774,6 +870,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "c8d7800c-6530-4594-b577-7459654d50db",
@@ -782,6 +879,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "8ec36df7-0674-4b0c-9326-97d1cce71941",
@@ -790,6 +888,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "1042e0ad-6cb4-4311-b456-d0e72f5a9294",
@@ -798,6 +897,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "8ad42ac2-5b15-4d0e-9661-3487004d2159",
@@ -806,6 +906,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "c2e281fd-226a-4f0b-94c3-d5e5dae72752",
@@ -814,6 +915,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "7658b108-4117-4856-853b-93ffba44d7f8",
@@ -822,6 +924,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "c0ddc85c-d234-422e-b4cb-2c553f881e8d",
@@ -830,6 +933,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "b4a7c9a6-2f21-4902-a337-692debb573ab",
@@ -838,6 +942,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "9e9ac9cf-e178-415c-8f63-1267a4304010",
@@ -846,6 +951,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "4fa560c9-2c9c-4ea5-8a63-39db606f63df",
@@ -854,6 +960,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "356a2683-b6ee-4235-aa9e-e81b85983073",
@@ -862,6 +969,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "59dddbe0-4536-471e-a6ad-7bd6f02159be",
@@ -870,6 +978,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "c8e75da5-6637-4be7-b75a-d1fa733d4dcd",
@@ -878,6 +987,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "e1d8c25f-e29f-4f5c-91eb-69f9d9342846",
@@ -886,6 +996,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "c79a5dbf-bc80-4a3f-9494-bc5d72e3a997",
@@ -894,6 +1005,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "334a7981-5cc6-4d02-bdb9-9c341b346b20",
@@ -902,6 +1014,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "75fb0e52-1517-4286-904c-87d49a608301",
@@ -910,6 +1023,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "8b978adb-f6cd-4ac4-a2ad-d077fcf6949c",
@@ -918,6 +1032,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "f0f630a3-d797-44b6-b8c1-2b365242f791",
@@ -926,6 +1041,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "71e8b43d-abde-4988-b6e1-4ef983508d33",
@@ -934,6 +1050,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "21bc93c4-0c37-4016-bcb1-36e7a68e5080",
@@ -942,6 +1059,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "c0a1305e-a65b-4bbd-b8b0-9e326f7e355c",
@@ -950,6 +1068,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "4490bfad-d1f1-4f5c-a55a-043ee99c03c6",
@@ -958,6 +1077,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "725926f7-0de1-4b0f-b6db-dccb58bd2e82",
@@ -966,6 +1086,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "c538c6da-f64c-4a50-b41d-e5e0985b71b0",
@@ -974,6 +1095,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "7f1b3918-5655-49ee-a17a-002f05130f19",
@@ -982,6 +1104,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "8e50bc86-fbb0-4e1e-b3d2-bf80e096a19e",
@@ -990,6 +1113,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "a383bc25-c4ec-440d-ac7b-24fdc99dbe55",
@@ -998,6 +1122,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "dde00c5c-4926-4c77-8650-40359132ccb0",
@@ -1006,6 +1131,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "5560b676-1af3-4a5e-9354-d674dc13cdcc",
@@ -1014,6 +1140,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "1e582ea0-2b3e-4c6f-8218-64523da09b45",
@@ -1022,6 +1149,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "ad25da06-e840-4446-beb5-c2944a1c5bd4",
@@ -1030,6 +1158,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "08a4cdf2-0ae0-4a92-a1a5-3ab94c0fc0c8",
@@ -1038,6 +1167,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "091639d5-2eb1-4243-abbf-374a7b500181",
@@ -1046,6 +1176,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "b4ffcf84-7880-4008-9af1-819e335a273d",
@@ -1054,6 +1185,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "92e60499-52a0-4fb9-9aa9-4008cf553822",
@@ -1062,6 +1194,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "42cbd443-f07d-459f-8fe7-b4261955ce95",
@@ -1070,6 +1203,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "93da35e5-ccb2-4732-9bcd-6beb5adb3d9b",
@@ -1078,6 +1212,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "88804afc-0ee4-4d53-9b94-991ef68d8e05",
@@ -1086,6 +1221,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "5f546e3d-2670-4fdb-936c-bc6012357da8",
@@ -1094,6 +1230,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "bdf2f013-ba51-4803-bdbe-c0a52deb30ac",
@@ -1102,6 +1239,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "ce31c8b7-7280-46f4-8199-5595cd38af3b",
@@ -1110,6 +1248,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "256b79b2-cb50-4193-969e-41f819d6ed91",
@@ -1118,6 +1257,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "473e8c84-ca34-4ee5-8e73-78bd6540ce34",
@@ -1126,6 +1266,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "3e84a74d-fbd0-4786-84bb-63092e9d3a47",
@@ -1134,6 +1275,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "e6bb0180-abaa-4e33-a92d-b1bfe8eaab13",
@@ -1142,6 +1284,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "e258c378-3d42-4b7d-9c74-d3d898d5c58a",
@@ -1150,6 +1293,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "24f36073-bef5-45e0-9d75-d103a4bad46f",
@@ -1158,6 +1302,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "65581327-ccea-4c55-b8cb-cfc5b82c5738",
@@ -1166,6 +1311,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "5699d85d-f611-4ae4-b081-0096bf8613a6",
@@ -1174,6 +1320,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "27b97412-c1e0-41a7-bcca-bd42c892c499",
@@ -1182,6 +1329,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "3533d373-40d9-4463-8fcf-7ccd965a6fcd",
@@ -1190,6 +1338,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "1f62c677-fd0c-47d1-9189-017d4d074372",
@@ -1198,6 +1347,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "ff0f3418-bfae-4888-83ca-e339cf52379a",
@@ -1206,6 +1356,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "4d432976-4492-42ea-a74a-50186bc93e47",
@@ -1214,6 +1365,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "4075a499-03d3-465e-b157-cee559c4eb72",
@@ -1222,6 +1374,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "5c66febf-c41b-46c3-ac28-6571d59b519e",
@@ -1230,6 +1383,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "97eb9930-17b5-4865-a8b8-3f2b015c687b",
@@ -1238,6 +1392,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "1aceac96-f11d-413e-8171-fc10a346d6fa",
@@ -1246,6 +1401,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "87b17682-d590-49d9-a3a8-4c392dec590d",
@@ -1254,6 +1410,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "725b0fc2-16e6-4e64-b169-f0bbf21b25db",
@@ -1262,6 +1419,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "475c5d81-a46d-4d93-9dd7-7f708a8a0d6e",
@@ -1270,6 +1428,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "cd482e8f-23ee-42aa-b32f-8966d80ef45a",
@@ -1278,6 +1437,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "0f2a62ff-2ebd-473c-b4c0-a52d53ead2b6",
@@ -1286,6 +1446,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "6efc63ce-39bb-4ace-84fc-ceaaa10e8d41",
@@ -1294,6 +1455,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "d79a670a-7a3b-4257-9367-41130e17d9ec",
@@ -1302,6 +1464,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "0ab0bb36-e9ab-45ac-bd7e-551a22d2cae5",
@@ -1310,6 +1473,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "a1608e1f-e683-4f25-ae72-2c2a0919bbc9",
@@ -1318,6 +1482,7 @@ export const data = [
     is_completed: true,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "95f75cce-d1ab-4142-b0db-a3fd41b35b5c",
@@ -1326,6 +1491,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "f6186c84-8074-4bad-a1e1-14c9b0708037",
@@ -1334,6 +1500,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "6357f56b-8930-495b-a56d-4ee94e8c3ebf",
@@ -1342,6 +1509,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "cb718eb0-b04d-4700-afcb-7b15cd6a7d13",
@@ -1350,6 +1518,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "19a72266-9f0f-4ffb-b8fe-4ec99efe6172",
@@ -1358,6 +1527,7 @@ export const data = [
     is_completed: true,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "b117d9c5-d2eb-4aa8-9219-d693098b0961",
@@ -1366,6 +1536,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "1521f96d-3185-46b7-8101-ccbb2a56d521",
@@ -1374,6 +1545,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "82570a58-b79b-4aa7-b98f-f9983f8b3885",
@@ -1382,6 +1554,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "c2ef5ec4-3bd8-42a5-8fd4-78b576ae67d1",
@@ -1390,6 +1563,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "98d81f62-c259-4ea5-bc67-78df69cbd317",
@@ -1398,6 +1572,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "74e8786d-90cd-4a09-9c42-354edbcc76d8",
@@ -1406,6 +1581,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "2939937e-8a92-4e21-beff-7c2e64acabf4",
@@ -1414,6 +1590,7 @@ export const data = [
     is_completed: false,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "eb0b3c23-dfed-414d-bb5a-1f8bdc1dfe66",
@@ -1422,6 +1599,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "426c3123-d87c-4779-ace7-61af7d33b4fc",
@@ -1430,6 +1608,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "e4b6477d-500e-4d7c-9316-6feef989ba04",
@@ -1438,6 +1617,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "a6029dd6-0da2-4f76-92be-29121294153a",
@@ -1446,6 +1626,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "af3651c5-1e28-4720-9edc-03ed7842eda2",
@@ -1454,6 +1635,7 @@ export const data = [
     is_completed: true,
     list_id: "list6",
     list_name: "Articles",
+    list_color: "#ffffff",
   },
   {
     task_id: "ec6193d3-7fd5-468f-93b2-0eb2cba8e857",
@@ -1462,6 +1644,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "ae2a7630-4faf-4c0c-986a-565adb4e852d",
@@ -1470,6 +1653,7 @@ export const data = [
     is_completed: true,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "28fe6138-3fd4-46f9-9163-c49f36e254ef",
@@ -1478,6 +1662,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "2742d392-7a2a-43bf-bdc9-5611e9f57526",
@@ -1486,6 +1671,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "2049c2cb-6c07-433f-b4c1-df4bea85af8a",
@@ -1494,6 +1680,7 @@ export const data = [
     is_completed: true,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "8e5565b5-8c80-4828-b51a-7a1382379c91",
@@ -1502,6 +1689,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "cf3ca5c9-7436-4daf-a7d8-e12ab9278cf4",
@@ -1510,6 +1698,7 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "f0372199-765c-42d0-b6e2-cd65bf93c401",
@@ -1518,6 +1707,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "954d83f8-5796-4547-bfb7-2cfb94582769",
@@ -1526,6 +1716,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "1944d117-9c23-4761-85e4-b413a99da3c9",
@@ -1534,6 +1725,7 @@ export const data = [
     is_completed: false,
     list_id: "list3",
     list_name: "Spain trip",
+    list_color: "#ffffff",
   },
   {
     task_id: "146d0116-6a31-44cd-96fc-971321d5998b",
@@ -1542,6 +1734,7 @@ export const data = [
     is_completed: false,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "8a774d02-4a9e-41b1-aa9d-221f6b991062",
@@ -1550,6 +1743,7 @@ export const data = [
     is_completed: false,
     list_id: "list1",
     list_name: "List title",
+    list_color: "#ffffff",
   },
   {
     task_id: "667a2012-e93f-416d-a768-5f964e83e588",
@@ -1558,6 +1752,7 @@ export const data = [
     is_completed: true,
     list_id: "list2",
     list_name: "Funny list",
+    list_color: "#ffffff",
   },
   {
     task_id: "eae53100-87c8-432d-b748-030d30ef4055",
@@ -1566,6 +1761,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "00c73ff4-0932-4952-bc58-62f94412c4b0",
@@ -1574,6 +1770,7 @@ export const data = [
     is_completed: false,
     list_id: "list7",
     list_name: "Project",
+    list_color: "#ffffff",
   },
   {
     task_id: "6643bb33-87c9-4942-b4e6-914da35afa64",
@@ -1582,6 +1779,7 @@ export const data = [
     is_completed: false,
     list_id: "list5",
     list_name: "Books for 2023",
+    list_color: "#ffffff",
   },
   {
     task_id: "8c405b8d-4eff-4815-b1f9-ed7d9f834ab0",
@@ -1590,6 +1788,7 @@ export const data = [
     is_completed: true,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
   {
     task_id: "82d4ce23-db93-409c-a7b8-eb073683a60b",
@@ -1598,5 +1797,6 @@ export const data = [
     is_completed: false,
     list_id: "list4",
     list_name: "Movies to watch",
+    list_color: "#ffffff",
   },
 ];

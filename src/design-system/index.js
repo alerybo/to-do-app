@@ -15,6 +15,7 @@ export { StyledForm } from "./input/StyledForm.styled";
 //Buttons
 export { BorderButton } from "./button/BorderButton.styled";
 export { TextButton } from "./button/TextButton.styled";
+export { ColorPickerButton } from "./button/ColorPickerButton.styled";
 
 // Containers
 export { Container } from "./container/Container.styled";

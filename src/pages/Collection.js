@@ -10,16 +10,18 @@ import {
 } from "../design-system";
 
 const Collection = () => {
-  const { state, filterTasks, sortTasksByLists } = useGlobalContext();
-  const { id } = useParams();
-  const tasks = sortTasksByLists(filterTasks(state.tasks, id));
+  const { state, filterTasks, sortTasksByLists, addList } = useGlobalContext();
+  const { collectionId } = useParams();
+
+  //All tasks in this collection
+  const tasks = sortTasksByLists(filterTasks(state.tasks, collectionId));
 
   return (
     <div>
       <DashboardHeader>
-        <h2>{id}</h2>
+        <h2>{collectionId}</h2>
         <Container>
-          <TextButton>
+          <TextButton onClick={() => addList(collectionId)}>
             <BsPlusLg />
             <p>New list</p>
           </TextButton>
@@ -27,7 +29,11 @@ const Collection = () => {
       </DashboardHeader>
       <GridContainer>
         {tasks.map((list) => (
-          <TaskList key={list[0].list_id} list={list} />
+          <TaskList
+            key={list[0].list_id}
+            list={list}
+            collection={collectionId}
+          />
         ))}
       </GridContainer>
     </div>

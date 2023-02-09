@@ -1,11 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { useState } from "react";
 import { useGlobalContext } from "../../context";
 // Material UI components
-import Autocomplete from "@mui/material/Autocomplete";
-import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
-import Collapse from "@mui/material/Collapse";
+
+import {
+  Autocomplete,
+  List,
+  Link,
+  Collapse,
+  ListItemButton,
+} from "@mui/material";
+
 // Styled Components
 import { SidebarContainer, SearchBar, BorderButton } from "../../design-system";
 // Icons
@@ -22,9 +27,7 @@ import {
 
 const Sidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const handleClick = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+
   const { state } = useGlobalContext();
 
   return (
@@ -60,26 +63,28 @@ const Sidebar = () => {
               component="nav"
               aria-labelledby="nested-list-subheader"
             >
-              <ListItemButton>
-                <Link to="/">
-                  <BsCalendar4Event />
-                  <p>Today</p>
-                </Link>
+              <ListItemButton component={RouterLink} to="/">
+                <BsCalendar4Event />
+                <p>Today</p>
               </ListItemButton>
 
-              <ListItemButton onClick={handleClick}>
+              <ListItemButton
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
                 <BsBookmarks />
                 <p>Collections</p>
                 {isDropdownOpen ? <BsChevronUp /> : <BsChevronDown />}
               </ListItemButton>
 
               <Collapse in={isDropdownOpen} timeout="auto" unmountOnExit>
-                <List component="div" disablePadding>
+                <List component="div">
                   {state.collections.map((collection) => (
-                    <ListItemButton>
-                      <Link to={`collection/` + collection}>
-                        <p>{collection}</p>
-                      </Link>
+                    <ListItemButton
+                      component={RouterLink}
+                      key={collection}
+                      to={`collection/` + collection}
+                    >
+                      {collection}
                     </ListItemButton>
                   ))}
                   <ListItemButton>

@@ -1,5 +1,6 @@
 import React, { useContext, useReducer } from "react";
 import reducer from "./reducer";
+import { v4 as uuid } from "uuid";
 
 import { data } from "./data/data";
 
@@ -33,25 +34,59 @@ const AppProvider = ({ children }) => {
     }
     return taskLists;
   };
-
+  //FUNCTION VONVERTS RGB COLOR TO HEX CODE
+  const rgbToHex = (rgb) => {
+    const singleColorToHex = (color) => {
+      const hex = color.toString(16);
+      return hex.length === 1 ? "0" + hex : hex;
+    };
+    const rgbValues = rgb.match(/^rgb\((\d*)\,\s(\d*)\,\s(\d*)\)/);
+    const r = +rgbValues[1];
+    const g = +rgbValues[2];
+    const b = +rgbValues[3];
+    return (
+      "#" + singleColorToHex(r) + singleColorToHex(g) + singleColorToHex(b)
+    );
+  };
   // TASK DISPATCHERS
   const toggleTask = (task_id) => {
-    console.log(task_id);
     dispatch({ type: "TOGGLE_TASK", payload: task_id });
   };
   const deleteTask = (task_id) => {
-    console.log(task_id);
     dispatch({ type: "DELETE_TASK", payload: task_id });
   };
   const editTask = (task_id, newTitle) => {
-    console.log(task_id);
     dispatch({ type: "EDIT_TASK", payload: { task_id, newTitle } });
+  };
+
+  const addTask = (collection, list_id, list_name) => {
+    const task_id = uuid();
+    const task_name = "Double click to edit";
+    dispatch({
+      type: "ADD_TASK",
+      payload: { task_id, task_name, collection, list_id, list_name },
+    });
   };
 
   // LIST DISPATCHERS
   const editListTitle = (list_id, newTitle) => {
-    console.log(list_id);
     dispatch({ type: "EDIT_LIST_TITLE", payload: { list_id, newTitle } });
+  };
+  const editListColor = (list_id, color) => {
+    const hexColor = rgbToHex(color);
+    dispatch({ type: "EDIT_LIST_COLOR", payload: { list_id, hexColor } });
+  };
+  const deleteList = (list_id) => {
+    dispatch({ type: "DELETE_LIST", payload: list_id });
+  };
+  const addList = (collection) => {
+    const list_id = uuid();
+    const list_name = "Double click to edit";
+    dispatch({
+      type: "ADD_LIST",
+      payload: { collection, list_id, list_name },
+    });
+    addTask(collection, list_id, list_name);
   };
 
   return (
@@ -60,10 +95,15 @@ const AppProvider = ({ children }) => {
         state,
         filterTasks,
         sortTasksByLists,
+        rgbToHex,
         toggleTask,
         editTask,
         deleteTask,
+        addTask,
         editListTitle,
+        editListColor,
+        deleteList,
+        addList,
       }}
     >
       {children}
