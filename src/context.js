@@ -82,12 +82,13 @@ const AppProvider = ({ children }) => {
   const addList = (collection) => {
     const list_id = uuid();
     const list_name = "Double click to edit";
-    dispatch({
-      type: "ADD_LIST",
-      payload: { collection, list_id, list_name },
-    });
     addTask(collection, list_id, list_name);
   };
+  // COLLECTION DISPATCHERS
+    const addCollection = (collection) => {
+      const collection_id = uuid();
+      addTask(collection, collection_id);
+    };
 
   return (
     <AppContext.Provider
@@ -104,6 +105,7 @@ const AppProvider = ({ children }) => {
         editListColor,
         deleteList,
         addList,
+        addCollection,
       }}
     >
       {children}

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SearchBar = styled.div`
+export const Input = styled.div`
   display: flex;
   align-items: center;
   background: ${(props) => props.theme.colors.white};

@@ -6,7 +6,7 @@ export const TextButton = styled.button`
   gap: 8px;
   background: transparent;
   border: none;
-  margin: 0 5px;
+  margin: 10px 5px;
   padding: 10px 16px;
   border-radius: 10px;
   transition: all 0.3s;
@@ -23,5 +23,9 @@ export const TextButton = styled.button`
   svg {
     display: inline-block;
     vertical-align: middle;
+  }
+
+  &.create {
+    background: rgba(0, 0, 0, 0.05);
   }
 `;

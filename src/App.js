@@ -9,6 +9,7 @@ import Archive from "./pages/Archive";
 import StarredList from "./pages/StarredList";
 import DailyList from "./pages/DailyList";
 import Collection from "./pages/Collection";
+import NewCollectionForm from "./pages/NewCollectionForm";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<DailyList />} />
               <Route path="/starred" element={<StarredList />} />
               <Route path="/archive" element={<Archive />} />
+              <Route path="/newcollection" element={<NewCollectionForm />} />
               <Route
                 path="/collection/:collectionId"
                 element={<Collection />}

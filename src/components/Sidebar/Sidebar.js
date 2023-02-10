@@ -3,16 +3,10 @@ import { useState } from "react";
 import { useGlobalContext } from "../../context";
 // Material UI components
 
-import {
-  Autocomplete,
-  List,
-  Link,
-  Collapse,
-  ListItemButton,
-} from "@mui/material";
+import { Autocomplete, List, Collapse, ListItemButton } from "@mui/material";
 
 // Styled Components
-import { SidebarContainer, SearchBar, BorderButton } from "../../design-system";
+import { SidebarContainer, Input, BorderButton } from "../../design-system";
 // Icons
 import {
   BsCalendar4Event,
@@ -27,7 +21,6 @@ import {
 
 const Sidebar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
   const { state } = useGlobalContext();
 
   return (
@@ -41,7 +34,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="menu">
-          <SearchBar>
+          <Input>
             <BsSearch />
             <Autocomplete
               id="custom-input-demo"
@@ -56,7 +49,7 @@ const Sidebar = () => {
                 </div>
               )}
             />
-          </SearchBar>
+          </Input>
           <div className="links">
             <List
               sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
@@ -87,7 +80,7 @@ const Sidebar = () => {
                       {collection}
                     </ListItemButton>
                   ))}
-                  <ListItemButton>
+                  <ListItemButton component={RouterLink} to={`/newcollection`}>
                     <BsPlusLg className="plus-icon" />
                     <p>New collection</p>
                   </ListItemButton>

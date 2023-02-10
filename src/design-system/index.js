@@ -9,7 +9,7 @@ export { StyledDashboard } from "./global/Dashboard.styled";
 export { DashboardHeader } from "./header/DashboardHeader.styled";
 
 //inputs
-export { SearchBar } from "./input/SearchBar.styled";
+export { Input } from "./input/Input.styled";
 export { StyledForm } from "./input/StyledForm.styled";
 
 //Buttons
