@@ -67,12 +67,20 @@ const reducer = (state, action) => {
     );
     return { ...state, tasks: newList };
   }
-    if (action.type === "DELETE_LIST") {
-      const newList = state.tasks.filter(
-        (task) => task.list_id !== action.payload
-      );
-      return { ...state, tasks: newList };
-    }
+  if (action.type === "DELETE_LIST") {
+    const newList = state.tasks.filter(
+      (task) => task.list_id !== action.payload
+    );
+    return { ...state, tasks: newList };
+  }
+  // COLLECTION ACTIONS
+  if (action.type === "ADD_COLLECTION") {
+    const newCollectionsList = [
+      ...state.collections,
+      action.payload.collection_name,
+    ];
+    return { ...state, collections: newCollectionsList };
+  }
 
   //   if (action.type === "FILTER_TASKS") {
   //     return { ...state, filter: action.payload };

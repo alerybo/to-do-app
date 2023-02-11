@@ -12,7 +12,9 @@ const NewCollectionForm = () => {
   const [collectionName, setCollectionName] = useState("");
   const { addCollection } = useGlobalContext();
 
-  const createHandler = () => {};
+  const createHandler = () => {
+    addCollection(collectionName);
+  };
   return (
     <div>
       <DashboardHeader>

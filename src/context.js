@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
     tasks: data,
     collections: [...new Set(data.map((item) => item.collection))],
   });
+  console.log(state.collections);
 
   //FUNCTION RETURNS FILTERED ARRAY OD TASKS
   const filterTasks = (tasks, id) => {
@@ -85,10 +86,13 @@ const AppProvider = ({ children }) => {
     addTask(collection, list_id, list_name);
   };
   // COLLECTION DISPATCHERS
-    const addCollection = (collection) => {
-      const collection_id = uuid();
-      addTask(collection, collection_id);
-    };
+  const addCollection = (collection_name) => {
+    const collection_id = uuid();
+    dispatch({
+      type: "ADD_COLLECTION",
+      payload: { collection_id, collection_name },
+    });
+  };
 
   return (
     <AppContext.Provider
