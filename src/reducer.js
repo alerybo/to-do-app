@@ -81,6 +81,13 @@ const reducer = (state, action) => {
     ];
     return { ...state, collections: newCollectionsList };
   }
+  if (action.type === "DELETE_COLLECTION") {
+    const newList = state.tasks.filter(
+      (task) => task.collection !== action.payload
+    );
+    console.log(newList);
+    return { ...state, tasks: newList };
+  }
 
   //   if (action.type === "FILTER_TASKS") {
   //     return { ...state, filter: action.payload };

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useGlobalContext } from "../context";
 
 import {
@@ -11,10 +12,13 @@ import {
 const NewCollectionForm = () => {
   const [collectionName, setCollectionName] = useState("");
   const { addCollection } = useGlobalContext();
+  const navigate = useNavigate();
 
   const createHandler = () => {
     addCollection(collectionName);
+    navigate(`/collection/${collectionName}`);
   };
+
   return (
     <div>
       <DashboardHeader>

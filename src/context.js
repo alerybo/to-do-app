@@ -12,7 +12,6 @@ const AppProvider = ({ children }) => {
     tasks: data,
     collections: [...new Set(data.map((item) => item.collection))],
   });
-  console.log(state.collections);
 
   //FUNCTION RETURNS FILTERED ARRAY OD TASKS
   const filterTasks = (tasks, id) => {
@@ -93,6 +92,9 @@ const AppProvider = ({ children }) => {
       payload: { collection_id, collection_name },
     });
   };
+  const deleteCollection = (collection_id) => {
+    dispatch({ type: "DELETE_COLLECTION", payload: collection_id });
+  };
 
   return (
     <AppContext.Provider
@@ -110,6 +112,7 @@ const AppProvider = ({ children }) => {
         deleteList,
         addList,
         addCollection,
+        deleteCollection,
       }}
     >
       {children}
